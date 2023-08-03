@@ -27,14 +27,5 @@
     <Manager pathname="" />
     -->
     
-    <Resource 
-    	auth="Container" 
-    	driverClassName="oracle.jdbc.driver.OracleDriver" 
-    	url="jdbc:oracle:thin:@localhost:1521:xe" 
-    	username="c##harry" 
-    	password="hey221" 
-    	name="jdbc/OracleTest"  
-    	type="javax.sql.DataSource"
-    	maxActive="4" 
-    	maxWait="10000" />
+    <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="4" maxWait="10000" name="jdbc/OracleTest" password="hey221" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:xe" username="c##harry"/>
 </Context>

@@ -31,6 +31,7 @@ public class LoginCon extends HttpServlet {
 		
 		String mID = request.getParameter("mID"); // login.jsp에서 받아오기
 		HttpSession session = request.getSession();
+		session.setAttribute("memberID", mID);
 		
 		try {
 			Class.forName(driver);
